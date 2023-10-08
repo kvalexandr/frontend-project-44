@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log("asdfdd");
+import greeting from '../cli.js';
+
+greeting();
