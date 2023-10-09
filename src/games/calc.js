@@ -17,14 +17,13 @@ const game = () => {
   const expression = getExpression[operator];
 
   const question = `${operandOne} ${operator} ${operandTwo}`;
-  const answer = expression(operandOne, operandTwo);
-  const isCorrectAnswer = (userAnswer) => parseInt(userAnswer, 10) === answer;
+  const answer = String(expression(operandOne, operandTwo));
 
-  return [question, answer, isCorrectAnswer];
+  return [question, answer];
 };
 
-const startCalc = () => {
+const runGame = () => {
   initGame(startQuestion, game);
 };
 
-export default startCalc;
+export default runGame;

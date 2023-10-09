@@ -7,13 +7,12 @@ const game = () => {
   const number = getRandomNumber(1, 100);
   const question = number;
   const answer = parseInt(number, 10) % 2 === 0 ? 'yes' : 'no';
-  const isCorrectAnswer = (userAnswer) => userAnswer === answer;
 
-  return [question, answer, isCorrectAnswer];
+  return [question, answer];
 };
 
-const startEven = () => {
+const runGame = () => {
   initGame(startQuestion, game);
 };
 
-export default startEven;
+export default runGame;
