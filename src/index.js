@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
 import greeting from './cli.js';
 
-const userName = greeting();
+const initGame = (description, generateRound) => {
+  const userName = greeting();
 
-const initGame = (startQuestion, game) => {
-  console.log(startQuestion);
-  let countGames = 3;
+  console.log(description);
+  const roundsCount = 3;
 
-  while (countGames > 0) {
-    const [question, answer] = game();
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [question, answer] = generateRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -19,8 +19,6 @@ const initGame = (startQuestion, game) => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-
-    countGames -= 1;
   }
   console.log(`Congratulations, ${userName}!`);
 };

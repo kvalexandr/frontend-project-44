@@ -1,9 +1,9 @@
 import initGame from '../index.js';
 import getRandomNumber from '../helpers.js';
 
-const startQuestion = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const game = () => {
+const generateRound = () => {
   const operations = ['+', '-', '*'];
   const getExpression = {
     '+': (a, b) => a + b,
@@ -23,7 +23,7 @@ const game = () => {
 };
 
 const runGame = () => {
-  initGame(startQuestion, game);
+  initGame(description, generateRound);
 };
 
 export default runGame;
