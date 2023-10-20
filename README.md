@@ -5,7 +5,6 @@
 <h3>Description</h3>
 <p>Set of 5 mathematical games. You must answer correctly three times in a row to win each game. If the answer is wrong, you can start any game again.
 </p>
-<h4>Just write the name of the game you want to play in the terminal!</h4>
 
 <h3>Installation</h3>
 <p>JavaScript interpreter (e.g. node.js)</p>
