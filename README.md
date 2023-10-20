@@ -4,19 +4,28 @@
 
 <h3>Description</h3>
 <p>Set of 5 mathematical games. You must answer correctly three times in a row to win each game. If the answer is wrong, you can start any game again.
-<ul><h4>Games:</h4>
-    <li>brain-even</li>
-    <li>brain-calc</li>
-    <li>brain-gcd</li>
-    <li>brain-progression</li>
-    <li>brain-prime</li>
-</ul>
-Examples of game implementations can be seen below.
 </p>
 <h4>Just write the name of the game you want to play in the terminal!</h4>
 
 <h3>Installation</h3>
 <p>JavaScript interpreter (e.g. node.js)</p>
+<ul>
+<li>git clone https://github.com/kvalexandr/frontend-project-44</li>
+<li>cd frontend-project-44</li>
+<li>make install</li>
+<li>npm link</li>
+</ul>
+
+<h4>Just write the name of the game you want to play in the terminal!</h4>
+<ul>
+<li>brain-even</li>
+<li>brain-calc</li>
+<li>brain-gcd</li>
+<li>brain-progression</li>
+<li>brain-prime</li>
+</ul>
+
+<p>Examples of game implementations can be seen below.</p>
 
 <h3>Even or not</h3>
 <a href="https://asciinema.org/a/612608" target="_blank"><img src="https://asciinema.org/a/612608.svg" /></a>
